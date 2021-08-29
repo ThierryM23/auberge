@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+    <style>
+        .grande{
+            display: flex;
+            justify-content: center;
+            background-size: auto;
+            max-height: 767px;
+            height: 96%:
+            background: #636467 url('auberge_images/Auberge-devant.jpg') ;
+        }
+        .grow:hover
+        {
+            -webkit-transform: scale(1.3);
+            -ms-transform: scale(1.3);
+            transform: scale(1.3);
+        }
+    </style>
+</head>
+<body >
+<div class="page">
+    <!-- Page Header-->
+    <header >
+        <nav class="navbar navbar-expand-md navbar-light bg-dark bg-opacity-50">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#"><img src="auberge_images/logo-auberge528×294.jpg"
+                                                      height="50"/></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto  mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#" tabindex="-1" aria-disabled="true">contact</a>
+                        </li>
+                    </ul>
+                    <ul class="navbar-nav me-right ">
+                        <li class="nav-item dropdown ">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Langue
+                            </a>
+                            <ul class="dropdown-menu bg-dark bg-opacity-50" >
+                                <li><a class="dropdown-item" href="../en/index.html">🇬🇧 English</a></li>
+                                <li><a class="dropdown-item" href="../index.html">🇫🇷 Français</a></li>
+                                <li><a class="dropdown-item" href="#">🇧🇷 Portugues</a></li>
+                            </ul>
+                        </li>
+                        <button type="button" class="btn-outline-dark" data-bs-toggle="modal"
+                                data-bs-target="#exampleModal">
+                            Book now!
+                        </button>
+                    </ul>
+                </div>
+                <!-- Modal -->
+                <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                     aria-hidden="true">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title">Booking Form</h5>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                        aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                                <!-- Table Reservation Form -->
+                                <section id="book-a-table" class="book-a-table">
+                                    <div class="container" data-aos="fade-up">
+                                        <form action="" method="post" role="form">
+                                            <div class="form-row">
+                                                <div class="form-group">
+                                                    <input type="text" name="name" class="form-control"
+                                                           id="name" placeholder="Your Name">
+                                                </div>
+                                                <div class="form-group">
+                                                    <input type="email" class="form-control" name="email"
+                                                           id="email" placeholder="Your Email">
+                                                </div>
+                                                <div class="form-group">
+                                                    <input type="text" class="form-control" name="phone"
+                                                           id="phone" placeholder="Your Phone">
+                                                </div>
+                                                <div class="col-lg-8 col-md-6 form-group">
+                                                    <input type="date" name="date" class="form-control"
+                                                           id="date" placeholder="Date">
+                                                </div>
+                                                <div class="col-lg-4 col-md-6 form-group">
+                                                    <input type="time" class="form-control" name="time"
+                                                           id="time" placeholder="Time">
+                                                </div>
+                                                <div class="col-lg-4 col-md-6 form-group">
+                                                    <input type="number" class="form-control" name="people"
+                                                           id="people" placeholder="No. of people">
+                                                </div>
+                                            </div>
+                                            <div class="form-group">
+                                                        <textarea class="form-control" name="message"
+                                                                  placeholder="Message"></textarea>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </section>
+                                <!-- End Table Reservation Form -->
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close
+                                </button>
+                                <button type="submit" class="btn btn-primary">Send message</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </nav>
+    </header>
+    <section class="grande grow">
+            <div class="container-fluid h-50"  >
+                <div class="row justify-content-center">
+                    <div class="col-12 col-md-9 col-xs-6">
+                        <h2 class="breadcrumbs-custom-title">Welcome</h2>
+                        <div class="box-default-decor"></div>
+                        <p class="big box-default-text">Our restaurant offers full-service dining with breathtaking
+                            views seen from our indoor covered patio and our outdoor sundeck.</p>
+                    </div>
+                </div>
+            </div>
+    </section>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"
+        integrity="sha384-eMNCOe7tC1doHpGoWe/6oMVemdAVTMs2xqW4mwXrXsW0L84Iytr2wi5v2QjrP/xp"
+        crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.min.js"
+        integrity="sha384-cn7l7gDp0eyniUwwAZgrzD06kc/tftFf19TOAs2zVinnD/C7E91j9yyk5//jjpt/"
+        crossorigin="anonymous"></script>
+</body>
+</html>

@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="../distv510/css/bootstrap.css">
+    <script src="../distv510/js/bootstrap.js"></script>
+    <style>
+        #book-a-table {
+            background-color: #FAFAFA;
+            padding: 50px 0px;
+            border-top: 1px solid #ddd;
+            border-bottom: 1px solid #ddd;
+            margin: 50px 0px;
+            float: left;
+            width: 100%;
+
+        }
+        .book-a-table p {
+            color: #9a9a9a;
+
+        }
+        .book-a-table textarea {
+            min-height: 200px;
+            max-width: 100%;
+        }
+    </style>
+</head>
+<body>
+<button type="button" class="btn btn-primary" data-bs-toggle="modal"
+        data-bs-target="#exampleModal">
+    Book Now!
+</button>
+
+
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title">Booking Form</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <!-- Table Reservation Form -->
+                <section id="book-a-table" class="book-a-table">
+                    <div class="container" data-aos="fade-up">
+                        <form action="" method="post" role="form">
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <input type="text" name="name" class="form-control" id="name" placeholder="Your Name">
+                                </div>
+                                <div class="form-group">
+                                    <input type="email" class="form-control" name="email" id="email" placeholder="Your Email">
+                                </div>
+                                <div class="form-group">
+                                    <input type="text" class="form-control" name="phone" id="phone" placeholder="Your Phone">
+                                </div>
+                                <div class="col-lg-8 col-md-6 form-group">
+                                    <input type="date" name="date" class="form-control" id="date" placeholder="Date">
+                                </div>
+                                <div class="col-lg-4 col-md-6 form-group">
+                                    <input type="time" class="form-control" name="time" id="time" placeholder="Time">
+                                </div>
+                                <div class="col-lg-4 col-md-6 form-group">
+                                    <input type="number" class="form-control" name="people" id="people" placeholder="No. of people">
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <textarea class="form-control" name="message" placeholder="Message"></textarea>
+                            </div>
+                        </form>
+                    </div>
+                </section>
+                <!-- End Table Reservation Form -->
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                <button type="submit" class="btn btn-primary">Send message</button>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="../js/script.js"></script>
+<script src="../js/core.min.js"></script>
+</body>
+</html>
