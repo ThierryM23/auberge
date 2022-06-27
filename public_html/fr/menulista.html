@@ -1,0 +1,484 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        @import url(https://fonts.googleapis.com/css?family=Muli:300italic);
+        *, *:after, *:before {
+        box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        }
+        * {margin:0;padding:0;border: 0 none;position: relative;}
+        html, body {
+        background: #7658F9;
+        padding-top: 1rem;
+        font-family: muli;
+        font-weight: 300;
+        font-style: italic;
+        }
+        p {
+        background: inherit;
+        width: 70%;
+        max-width: 40rem;
+        min-width: 300px;
+        margin: 0 auto;
+        font-size: 1.2rem;
+        line-height: 1.5rem;
+        color: #fff;
+        padding-right: 4rem;
+        margin-bottom: .5rem;
+        }
+        p:before {
+        content: '';
+        position: absolute;
+        bottom: .4rem;
+        width: 100%;
+        height: 0;
+        line-height: 0;
+        border-bottom: 2px dotted #ddd;
+        }
+        .descripcion {
+        background: inherit;
+        display: inline;
+        z-index: 1;
+        padding-right: .2rem;
+        }
+        .precio {
+        background: inherit;
+        position: absolute;
+        min-width: 4rem;
+        bottom: 0;
+        right: 0;
+        padding-left: .2rem;
+        text-align: right;
+        z-index: 2;
+        }
+        .precio:after {
+        content: '€';
+        }
+        h1 a {
+        display: block;
+        text-decoration: none;
+        color: rgba(0,0,0,.55);
+        margin-bottom: 1rem;
+        text-align: center;
+        transition: .5s;
+        }
+        h1 a:hover {
+        color:  rgba(0,0,0,.3);
+        letter-spacing: 2px;
+        }
+
+    </style>
+
+
+</head>
+<body>
+<section class="section section-lg bg-gray-1">
+    <div class="container"><a name="menu"></a>
+        <h2 class="text-center">Notre Carte estivale</h2>
+        <div class="row">
+            <div class="col-12">
+                <div class="tabs-custom tabs-horizontal tabs-classic" id="tabs-1">
+                    <ul class="nav nav-tabs nav-tabs-classic">
+
+                        <li class="nav-item " role="presentation">
+                            <a class="nav-link " href="#tabs-0-1"  data-toggle="tab">Entrées</a>
+                        </li>
+                        <li class="nav-item" role="presentation"><a class="nav-link " href="#tabs-1-1"
+                                                                    data-toggle="tab">Plats</a>
+                        </li>
+                        <li class="nav-item" role="presentation"><a class="nav-link" href="#tabs-1-2"
+                                                                    data-toggle="tab">Fromages & Desserts</a>
+                        </li>
+                        <li class="nav-item" role="presentation"><a class="nav-link" href="#tabs-1-3"
+                                                                    data-toggle="tab">Menus</a>
+                        </li>
+
+                    </ul>
+                    <div class="tab-content">
+                        <div class="tab-pane fade show active" id="tabs-0-1">
+                            <div class="box-event-modern">
+                                <div class="row align-items-center m-2 ">
+                                    <div class=" event-item-modern">
+                                        <div class="row align-items-center">
+                                            <div class="col-9 col-md-9">
+                                                <h4><a href="#tabs-0-1">Tartare de veau</a></h4>
+                                            </div>
+                                            <div class="col-3 col-md-3 me-0 text-end ">
+                                                <h6>15€</h6>
+                                            </div>
+                                        </div>
+                                        <div class="event-item-modern-text">
+                                            Tartare de veau, vierge de légumes, émulsion lait d'amande et roquette.
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row align-items-center m-2 ">
+                                    <div class=" event-item-modern">
+                                        <div class="row align-items-center">
+                                            <div class="col-9 col-md-9">
+                                                <h4><a href="#tabs-0-1">Salade fraîcheur</a></h4>
+                                            </div>
+                                            <div class="col-3 col-md-3 me-0 text-end ">
+                                                <h6>€12</h6>
+                                            </div>
+                                        </div>
+                                        <div class="event-item-modern-text">
+                                            légumes grillés, pesto, melon et jambon cru.
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="row align-items-center m-2 ">
+                                    <div class=" event-item-modern">
+                                        <div class="row align-items-center">
+                                            <div class="col-9 col-md-9">
+                                                <h4><a href="#tabs-0-1">Rosace de tomate</a></h4>
+                                            </div>
+                                            <div class="col-3 col-md-3 me-0 text-end ">
+                                                <h6>€12</h6>
+                                            </div>
+                                        </div>
+                                        <div class="event-item-modern-text">
+                                            Rosace de tomate, burrata et huile d'olive.
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="row align-items-center m-2 ">
+                                    <div class=" event-item-modern">
+                                        <div class="row align-items-center">
+                                            <div class="col-9 col-md-9">
+                                                <h4><a href="#tabs-0-1">Gâteau de foie</a></h4>
+                                            </div>
+                                            <div class="col-3 col-md-3 me-0 text-end ">
+                                                <h6>€8</h6>
+                                            </div>
+                                        </div>
+                                        <div class="event-item-modern-text">
+                                            Gâteau de foie, coulis de tomate ou sauce écrevisse.
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="row align-items-center m-2 ">
+                                    <div class=" event-item-modern">
+                                        <div class="row align-items-center">
+                                            <div class="col-9 col-md-9">
+                                                <h4><a href="#tabs-0-1">Salade de chèvre chaud</a></h4>
+                                            </div>
+                                            <div class="col-3 col-md-3 me-0 text-end ">
+                                                <h6>€12</h6>
+                                            </div>
+                                        </div>
+                                        <div class="event-item-modern-text">
+
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="row align-items-center m-2 ">
+                                    <div class=" event-item-modern">
+                                        <div class="row align-items-center">
+                                            <div class="col-9 col-md-9">
+                                                <h4><a href="#tabs-0-1">Carpaccio de truite</a></h4>
+                                            </div>
+                                            <div class="col-3 col-md-3 me-0 text-end ">
+                                                <h6>€13</h6>
+                                            </div>
+                                        </div>
+                                        <div class="event-item-modern-text">
+                                            Carpaccio de truite et vierge de légumes.
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="row align-items-center m-2 ">
+                                    <div class=" event-item-modern">
+                                        <div class="row align-items-center">
+                                            <div class="col-9 col-md-9">
+                                                <h4><a href="#tabs-0-1">Planches à partager</a></h4>
+                                            </div>
+                                            <div class="col-3 col-md-3 me-0 text-end ">
+                                                <h6>€15</h6>
+                                            </div>
+                                        </div>
+                                        <div class="event-item-modern-text">
+                                            Fromage ou Charcuterie.
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-pane fade show " id="tabs-1-1">
+                            <div class="box-event-modern">
+                                <div class="row align-items-center m-2 ">
+                                    <div class=" event-item-modern">
+                                        <div class="row align-items-center">
+                                            <div class="col-9 col-md-9">
+                                                <h4><a href="#tabs-1-1">Burger Végé</a></h4>
+                                            </div>
+                                            <div class="col-3 col-md-3 me-0 text-end ">
+                                                <h6>€15</h6>
+                                            </div>
+                                        </div>
+                                        <div class="event-item-modern-text">
+                                            galette de pomme de terre, légumes, salade, tomate, oignon, crème d'ail, frites de patate douce.
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="row align-items-center m-2 ">
+                                    <div class=" event-item-modern">
+                                        <div class="row align-items-center">
+                                            <div class="col-9 col-md-9">
+                                                <h4><a href="#tabs-1-1">L'italien Burger</a></h4>
+                                            </div>
+                                            <div class="col-3 col-md-3 me-0 text-end ">
+                                                <h6>€17.50</h6>
+                                            </div>
+                                        </div>
+                                        <div class="event-item-modern-text">
+                                            viande hachée, mozzarella, tomate séchée, pesto et roquette.
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="row align-items-center m-2 ">
+                                    <div class=" event-item-modern">
+                                        <div class="row align-items-center">
+                                            <div class="col-9 col-md-9">
+                                                <h4><a href="#tabs-1-1">Duo de brochettes grillées</a></h4>
+                                            </div>
+                                            <div class="col-3 col-md-3 me-0 text-end ">
+                                                <h6>€19</h6>
+                                            </div>
+                                        </div>
+                                        <div class="event-item-modern-text">
+                                            bœuf, canard, poivrons marinés et gratin dauphinois.
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="row align-items-center m-2 ">
+                                    <div class=" event-item-modern">
+                                        <div class="row align-items-center">
+                                            <div class="col-9 col-md-9">
+                                                <h4><a href="#tabs-1-1">Côte de bœuf pour 2 personnes</a></h4>
+                                            </div>
+                                            <div class="col-3 col-md-3 me-0 text-end ">
+                                                <h6>€45</h6>
+                                            </div>
+                                        </div>
+                                        <div class="event-item-modern-text">
+                                            (1,2 kg environ) frites maison et salade.
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="row align-items-center m-2 ">
+                                    <div class=" event-item-modern">
+                                        <div class="row align-items-center">
+                                            <div class="col-9 col-md-9">
+                                                <h4><a href="#tabs-1-1">Ceviche exotique</a></h4>
+                                            </div>
+                                            <div class="col-3 col-md-3 me-0 text-end ">
+                                                <h6>€17</h6>
+                                            </div>
+                                        </div>
+                                        <div class="event-item-modern-text">
+                                            poisson selon arrivage, crevettes, mangue et passion.
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="row align-items-center m-2 ">
+                                    <div class=" event-item-modern">
+                                        <div class="row align-items-center">
+                                            <div class="col-9 col-md-9">
+                                                <h4><a href="#tabs-1-1">Filet de truite à la Grenobloise</a></h4>
+                                            </div>
+                                            <div class="col-3 col-md-3 me-0 text-end ">
+                                                <h6>€20</h6>
+                                            </div>
+                                        </div>
+                                        <div class="event-item-modern-text">
+                                            beurre monté au vin blanc, câpres, croûtons, oignons et tagliatelles à l'encre de seiche.
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="row align-items-center m-2 ">
+                                    <div class=" event-item-modern">
+                                        <div class="row align-items-center">
+                                            <div class="col-9 col-md-9">
+                                                <h4><a href="#tabs-1-1">Suppléments Sauce</a></h4>
+                                            </div>
+                                            <div class="col-3 col-md-3 me-0 text-end ">
+                                                <h6>€2</h6>
+                                            </div>
+                                        </div>
+                                        <div class="event-item-modern-text">
+                                            Sauce forestière, écrevisse ou poivre.
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="row align-items-center m-2 ">
+                                    <div class=" event-item-modern">
+                                        <div class="row align-items-center">
+                                            <div class="col-9 col-md-9">
+                                                <h4><a href="#tabs-1-1">Suppléments Frites</a></h4>
+                                            </div>
+                                            <div class="col-3 col-md-3 me-0 text-end ">
+                                                <h6>€4</h6>
+                                            </div>
+                                        </div>
+                                        <div class="event-item-modern-text">
+                                            Bol de frites.
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-pane fade show " id="tabs-1-2">
+                            <div class="box-event-modern">
+                                <div class="row align-items-center m-2 ">
+                                    <div class="event-item-modern">
+                                        <div class="row align-items-center">
+                                            <div class="col-9 col-md-9">
+                                                <h4><a href="#">Assiette de fromages</a></h4>
+                                            </div>
+                                            <div class="col-3 col-md-3 me-0 text-end ">
+                                                <h6>6,50€</h6>
+                                            </div>
+                                        </div>
+                                        <div class="event-item-modern-text">
+                                            Assiette de fromages 3 fromages de notre Region.
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row align-items-center m-2 ">
+                                    <div class="event-item-modern">
+                                        <div class="row align-items-center">
+                                            <div class="col-9 col-md-9">
+                                                <h4><a href="#">Fromage blanc</a></h4>
+                                            </div>
+                                            <div class="col-3 col-md-3 me-0 text-end ">
+                                                <h6>5€</h6>
+                                            </div>
+                                        </div>
+                                        <div class="event-item-modern-text">
+                                            Fromage blanc frais en faisselle de la ferme du pays Voironnais
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row align-items-center m-2 ">
+                                    <div class="event-item-modern">
+                                        <div class="row align-items-center">
+                                            <div class="col-9 col-md-9">
+                                                <h4><a href="#">Parfait à la chartreuse</a></h4>
+                                            </div>
+                                            <div class="col-3 col-md-3 me-0 text-end ">
+                                                <h6>7€</h6>
+                                            </div>
+                                        </div>
+                                        <div class="event-item-modern-text">
+                                            Parfait à la chartreuse. Merengue italienne a la Chartreuse
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row align-items-center m-2 ">
+                                    <div class="event-item-modern">
+                                        <div class="row align-items-center">
+                                            <div class="col-9 col-md-9">
+                                                <h4><a href="#">Cœur coulant</a></h4>
+                                            </div>
+                                            <div class="col-3 col-md-3 me-0 text-end ">
+                                                <h6>6,50€</h6>
+                                            </div>
+                                        </div>
+                                        <div class="event-item-modern-text">
+                                            Cœur coulant aux 2 chocolats (blanc et noir).
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row align-items-center m-2 ">
+                                    <div class="event-item-modern">
+                                        <div class="row align-items-center">
+                                            <div class="col-9 col-md-9">
+                                                <h4><a href="#">Café gourmand</a></h4>
+                                            </div>
+                                            <div class="col-3 col-md-3 me-0 text-end ">
+                                                <h6>7€</h6>
+                                            </div>
+                                        </div>
+                                        <div class="event-item-modern-text">
+                                            Café avec degustations de nos desserts gourmands
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row align-items-center m-2 ">
+                                    <div class="event-item-modern">
+                                        <div class="row align-items-center">
+                                            <div class="col-9 col-md-9">
+                                                <h4><a href="#">Tartelette maison aux fruits de saison</a></h4>
+                                            </div>
+                                            <div class="col-3 col-md-3 me-0 text-end ">
+                                                <h6>6€</h6>
+                                            </div>
+                                        </div>
+                                        <div class="event-item-modern-text">
+                                            Tartelette maison aux fruits de saison
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row align-items-center m-2 ">
+                                    <div class="event-item-modern">
+                                        <div class="row align-items-center">
+                                            <div class="col-9 col-md-9">
+                                                <h4><a href="#"> chaque Boule de glace</a></h4>
+                                            </div>
+                                            <div class="col-3 col-md-3 me-0 text-end ">
+                                                <h6>2€</h6>
+                                            </div>
+                                        </div>
+                                        <div class="event-item-modern-text">
+                                            une Boule de glace (Chocolat, Fraise, Vanille, Citron, Chartreuse)
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-pane fade show " id="tabs-1-3">
+                            <div class="pricing-table">
+                                <h3 class="pricing-title">Menu enfant</h3>
+
+                                <!-- Lista de Caracteristicas / Propiedades -->
+                                <ul class="table-list">
+                                    <li><p>Plat au choix </p>
+                                        <p>+ sirop </p>
+                                        <p>+ boule de glace</p></li>
+                                    <li>choisir plat entre</li>
+                                    <li>Pièce du boucher (haché), frites, riz ou légumes</li>
+                                    <li>ou</li>
+                                    <li>Spaghetti bolognaise</li>
+                                </ul>
+                                <!-- Contratar / Comprar -->
+                                <div class="price">10€</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</section>
+</body>
+</html>
